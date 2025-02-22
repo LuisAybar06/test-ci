@@ -14,7 +14,7 @@ def check_blank_lines_betwen_blocks(file_path):
         for i in range(2, len(lines)):
             if re.match(r'^\s*(class|def|if|for|while|with)', lines[1]):
 
-                if re.match(r'^\s*$', lines[i-1]) or not re.match(r'^\s*$', lines[i-2]):
+                if not re.match(r'^\s*$', lines[i-1]) or not re.match(r'^\s*$', lines[i-2]):
                     print(f"{file_path}:{i+1}: Expected exactly 2 blank lines before block definition")
                     errors += 1
 
@@ -23,6 +23,9 @@ def check_blank_lines_betwen_blocks(file_path):
                     errors += 1
 
     return errors
+
+
+
 
 
 def lint_directory(directory):
