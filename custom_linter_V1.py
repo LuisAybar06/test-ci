@@ -24,6 +24,7 @@ def check_blank_lines_between_blocks(file_path):
     return errors
 
 
+
 def lint_directory(directory):
     total_errors = 0
 
