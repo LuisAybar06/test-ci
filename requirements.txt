@@ -1,5 +1,15 @@
+#-----ci-v2--------
 flake8
 mypy
+#------------------
+
+#-----ci-v3--------
+nbformat
+pytest
+nbformat
+nbconvert
+radon
+#------ci-v5------------
 nbformat
 nbconvert
 radon
