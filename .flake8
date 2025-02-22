@@ -1,0 +1,6 @@
+[flake8]
+max-line-length = 88
+exclude = venv
+ignore = E,W
+select = E302, W293
+
