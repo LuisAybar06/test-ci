@@ -52,7 +52,7 @@ def check_long_functions(file_content, file_path, max_lines=50):
     return errors
 
 
-my_app/pipeline_prediction_model_v1.ipnb
+
 def check_naming_conventions(file_content, file_path):
     print(f"Checking file: {file_path}")
     errors = 0
