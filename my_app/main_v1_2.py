@@ -19,6 +19,5 @@ def main() -> None:
     strings = ["hello", "world"]
     concatenated = concatenate_strings(strings)
     display_message(concatenated)
-
 if __name__ == "__main__":
     main()
